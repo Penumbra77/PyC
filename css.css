@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2a8ca5; /* fondo celeste azulado fuerte */
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Botón volver */
+.boton-volver {
+    display: inline-block;
+    background-color: #45c2dc; /* celeste vibrante */
+    color: #002b3b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;    
+    transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+    background-color: #2ea6c0; /* tono más oscuro */
+}
+
+/* Tarjeta de producto */
+.producto {
+    background-color: #4db9cd; /* tarjeta con celeste intermedio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin: 10px;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    color: #002a34; /* azul oscuro para buen contraste */
+    margin: 10px 0 5px;
+}
+
+.producto p {
+    font-size: 18px;
+    color: #073a46;
+}
+
+/* Botón de producto */
+.producto button {
+    background-color: #027a91;
+    color: #e0f7fa; /* celeste claro, no blanco */
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #015d6e;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    display: block;
+    width: 100%;
+    background-color: #014d5a;
+    color: #b3e4ef; /* texto celeste claro */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 80px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .producto {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
